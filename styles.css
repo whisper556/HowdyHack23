@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Seaweed+Script&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #00000d;
+    background-size: cover;
+    border-spacing: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100%;
+    background-color: #080630;
+}
+
+nav>h1{
+    padding-left: 40px;
+}
+
+nav>div{
+    margin-right: 60px;
+}
+
+h1{
+    color: #ff7cb3;
+    font-size: 70px;
+    font-family: 'Seaweed Script', cursive;
+
+    color: #ff7cb3;
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
+}
+
+.text-image-container{
+    color: #ff7cb3;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Seaweed Script', sans-serif;
+    font-size: 35px;
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff76;
+    transition: transform 0.2s ease;
+}
+
+.text-image-container:hover{
+    transform: scale(1.25);
+}
+
+/* Hide the image by default */
+.text-image-container .image {
+    display: none;
+}
+
+/* Style the container */
+.text-image-container {
+    position: relative;
+    width: 200px; /* Adjust the width and height as needed */
+    height: 200px;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Style the text */
+.text-image-container .text {
+    text-align: center;
+    line-height: 200px; /* Vertically center the text */
+    margin: 0;
+}
+
+/* Show the image on hover */
+.text-image-container:hover .image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.text-image-container:hover .text {
+    display: none;
+}
+
+.mainPage{
+    font-size: 40px;
+    width: 100%;
+}
+
+.logoSection{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 70vw;
+}
+
+.revLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    margin-right: 50%;
+    bottom: 2.5em;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section{
+    padding: 60px 40px 60px 20px;
+    color: #ff7cb3;
+    min-width: 25%;
+    max-width: 33.33%; 
+    float: left;
+    background-color: #080630;
+    background-size: cover;
+    border-radius: 24px;
+    text-align: center;
+    font-family: 'Seaweed Script', cursive;
+
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff76;
+    transition: transform 0.2s ease;
+}
+
+.section:hover{
+    transform: scale(1.3);
+}
+
+
+.subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #ff7cb3;
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+    <head>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJDc33yNoK87ii3UDXi67YtTg-M0vqTYQ&libraries=places"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Howdy Hack 2023</title>
+        <link rel="stylesheet" href="ReveilleSpottingStyles.css">
+        
+    </head>
+    <body>
+        <header class="maroon-bar">
+            <!-- <h1 class="title">Reveille's Diner</h1> -->
+            <div class="fornow"><img class="revSpot" src="images/revSpotted.PNG">
+                <p class="temp">Where's Rev?</p>
+            </div>
+            <div class="home">
+                <a href="index.html"> Back to Home </a>
+            </div>
+        </header>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+        </style>
+        <h1>Seen Reveille? Type in where she was so others can see!</h1>
+        <div style="text-align:center;">
+            <label for="location-input" class="enter">Enter a location:</label>
+        <input type="text" id="location-input" placeholder=" Blocker Building , MSC , Zach, etc.">
+            <div class="update-button">
+            <button id="update-button">Update Location</button>
+            
+            </div>
+        </div>
+        <div id="map"></div>
+        <script>
+             // Initialize Google Places Autocomplete for the input field
+             const input = document.getElementById('location-input');
+            const autocomplete = new google.maps.places.Autocomplete(input);
+            
+            console.log("hiiii")
+        
+            // Create a map
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: { lat: 30.61887446700001 , lng: -96.33647623289008 } // Default center coordinates at TAMU
+            });
+        
+            // Create a marker (initially hidden)
+            const marker = new google.maps.Marker({ map: map, visible: false });
+        
+        
+            function updateMap(location) {
+            
+
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+         // Add an event listener for when the page loads
+         window.addEventListener('load', function () {
+         // Fetch the latest location data from the backend
+            fetch('/get-location')
+                .then((response) => response.json())
+                .then((data) => {
+                    const latestLocation = data.location;
+
+                    if (latestLocation) {
+                        // If there's a latest location, update the map with it
+                        updateMap(latestLocation);
+
+                        // Also update the displayed location
+                        const locationDisplay = document.getElementById('location-display');
+                        locationDisplay.textContent = latestLocation.name;
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        });
+           
+            function sendLocationToBackend(location) {
+                fetch('/update-location', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ location }),
+                    })
+                    .then((response) => response.json())
+                    .then((data) => {
+                     console.log(data.message); // Log the response from the backend
+                     })
+                     .catch((error) => {
+                    console.error('Error:', error);
+                    });
+            }
+
+    // Listen for place selection
+    autocomplete.addListener('place_changed', function() {
+        const place = autocomplete.getPlace();
+        if (!place.geometry) {
+            console.error('Place not found:', place.name);
+            return;
+        }
+
+        // Update the map and marker with the selected place's location
+        map.setCenter(place.geometry.location);
+        marker.setPosition(place.geometry.location);
+        marker.setVisible(true);
+
+        updateMap(place.geometry.location);
+
+        // Update the displayed location
+        const locationDisplay = document.getElementById('location-display');
+        locationDisplay.textContent = place.formatted_address; // or place.name
+
+        // Send the location data to the backend
+        sendLocationToBackend({
+            name: place.formatted_address, // or place.name
+            lat: place.geometry.location.lat(),
+            lng: place.geometry.location.lng(),
+        });
+    });
+
+    
+    
+        
+
+            
+        </script>
+
+        
+    
+    </body>
+</html>

@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@500&family=Seaweed+Script&display=swap');
+
+img{
+  outline: none;
+  width: 150px;
+  height: 150px;
+  border-width: 0px;
+  border-style: none;
+  border: none !important;
+  border: none; /* Remove any borders on the container */
+  padding: 0px;
+  background-color: transparent;
+  margin: 0px;
+  box-shadow: none;
+}
+
+head{
+  color: #080630;
+}
+
+
+.button {
+  padding: 100px, 100px,100px,100px;
+  /* padding-right: 120px; */
+  transition: transform .2s; /* Animation */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #080630;
+  border-radius: 10px;
+  color: #cc1423;
+  border: none;
+  font-size: 30px;
+  outline: none;
+  font-weight: bold;
+  text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
+  font-family: 'Seaweed Script', cursive;
+
+  color: #ff7cb3;
+  text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
+}
+.home{
+  padding: 100px, 50px,100px,100px;
+  transition: transform .2s; /* Animation */
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #080630;
+  border-radius: 10px;
+  color: #cc1423;
+  border: none;
+  font-size: 35px;
+  outline: none;
+  font-weight: bold;
+  text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
+  font-family:  'Seaweed Script', cursive;
+
+  color: #ff7cb3;
+  text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
+}
+
+.home:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.button:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #080630;
+  color: #cc1423;
+  padding: 10px;
+  font-family: 'Seaweed Script', cursive;
+  text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
+  font-size: 40px;
+
+  color: #ff7cb3;
+  text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
+}
+/* Style the left content */
+.left {
+  display: flex;
+  flex: 1; /* Takes up available space */
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Style the right buttons */
+.right {
+display: flex;
+gap: 30px; /* Adjust the spacing between buttons */
+
+}
+
+.rev{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0px;
+  margin-top:-950px;
+  margin-bottom: -50px;
+  transition: transform 0.2s ease;
+  width: 500px;
+  height: 500px;
+
+}
+
+/*Use id="hovers" for all items that you want to have change to 1.51 size when hovered */
+#hovers:hover{
+  transform: scale(1.51);
+}
+
+.Left_1{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height:250px;
+}
+
+.Left_2{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height:250px;
+}
+
+.Left_3{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height: 250px;
+}
+
+.Left_4{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height:250px;
+}
+
+.Left_5{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height:250px;
+}
+
+.Right_1{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height: 250px;
+}
+
+.Right_2{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height: 250px;
+}
+
+.Right_3{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height: 250px;
+}
+
+.Right_4{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height: 250px;
+}
+
+.Right_5{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height: 250px;
+}
+
+
+.item_middle{
+  height: 100%;
+  margin-top: -810px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Seaweed Script', cursive;
+  color: white;
+  text-shadow: 0 0 5px #ececec, 0 0 9px #e2dfff, 0 0 6px #e3e4ff;
+  font-size: 50px;
+  
+}
+
+body {
+  height: 1475px;
+  background-color: #00000d;
+  background-image: url('menuImages/RevLogo.png');
+  background-size: auto;
+  background-position:bottom;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 50px;
+  /*Change grid-gap to alter size between columns*/
+  grid-gap:200px;
+  
+}
+
+.item_left, .item_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: strong;
+  border: none;
+  outline:none;
+  width: 300px;
+}
+
+.item_right{
+  margin-top: -875px;
+}
+
+#row_1,#row_2,#row_3,#row_4, #row_5{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+
+#header1{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  text-align: left;
+  margin: -100px;
+  margin-top: -2000px;
+  color: white;
+  font-size: 100px;
+
+}
+
+#txt_clr{
+  /* Tries to match colour of logo */
+  color:#d0e5ff;
+  margin-top: 50px;
+  /* Attempt at Gradient for text
+  background: -webkit-radial-gradient(30% 40%, circle closest-corner,rgb(167, 211, 255) 60%, rgb(80, 138, 255) 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  text-shadow: 0 0 12px #2b54b3, 0 0 17px #1b1095, 0 0 16px #5c5ff9;
+  font-family: "Arial Fatface", cursive;
+}
+
+#padRight{
+  padding-right: 130px;
+}

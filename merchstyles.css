@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Seaweed+Script&display=swap');
+
+.logo{
+    width:200px;
+}
+
+.logoimg{
+    display: flex;
+    flex-direction: row;
+}
+
+.temp{
+    font-size: 40px;
+    font-family: "Seaweed Script", cursive;
+    color:#ff7cb3;
+    padding-top: 25%;
+    font-weight: bold;
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
+}
+/* body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    width: 100%
+    height: 100vh;
+    align-items: center;
+    position: relative;
+
+} */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+    background-color: #080630;
+    
+}
+
+nav>h1{
+    padding-left: 10px;
+}
+
+h1{
+    color: #ff7cb3;
+    font-size: 70px;
+    font-family: 'Seaweed Script', cursive;
+
+    color: #ff7cb3;
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
+}
+
+nav>div{
+    margin-right: 150px;
+}
+
+.home{
+    color:#ff7cb3;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Seaweed Script', cursive;
+    font-size: 35px;
+}
+.home > a {
+    font-family: 'Seaweed Script', cursive;
+    color: #ff7cb3;
+    text-decoration: none;
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff76;
+    transition: transform 0.2s ease;
+}
+
+.home:hover{
+    transform: scale(1.5);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.container { 
+    width: 100%;
+    height: 100vh;
+    background-color: #00000d;
+    background-size: cover;
+
+}
+
+/* .starimage {
+    max-width: 75px;
+    height: auto
+} */
+
+.nav{
+    width: 100%;
+    height: 10%;
+
+    background-color: maroon;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav h1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.row {
+    display:flex;
+    height:88%;
+    align-items: center;
+}
+
+/* .col {
+    flex-basis: 50%;
+} */
+
+p {
+    color: #080630;
+    font-size: 11px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 70%;
+    width: 100vw;
+    gap: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.image-caption{
+    background-color: #080630;
+    /* background-image: url('images/background.png'); */
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px; 
+
+}
+
+.image-caption > img {
+    max-height: 200px;
+    width:auto;
+    border: 6px solid #ff7cb3;
+    border-radius: 10px;
+}
+
+.image-caption > p {
+    color:white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.image-text{
+    color:white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+/* 
+.cool-title {
+    position: absolute;
+    top: -20;
+    font-size: px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.pic of rev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 24px
+    
+
+}  */
+
+
+
+
+
+
+
+
+
+
+/*pic of rev goes here */
+/* nav {       
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+cool-title {
+    font-size: 10px
+}
+
+Main section {
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    background-color: #224
+    padding: 16px 16px 16px 16px //adds space in ur box//
+    //margins will add space aroung ur box//
+    border-radius: 8px 8px 8px 8px; //rounds it 8px//
+    font-weight: bold;
+}
+
+footer {
+    position: absoulte;
+    margin-bottom: 0px
+} */ 
